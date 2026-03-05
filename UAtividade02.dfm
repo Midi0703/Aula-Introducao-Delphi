@@ -12,15 +12,15 @@ object frm_Atividade02: Tfrm_Atividade02
   Font.Style = []
   TextHeight = 30
   object lbl_operacao: TLabel
-    Left = 167
+    Left = 184
     Top = 59
-    Width = 60
+    Width = 51
     Height = 30
   end
   object lbl_resultado: TLabel
     Left = 440
     Top = 59
-    Width = 65
+    Width = 6
     Height = 30
   end
   object edt_vlr_1: TEdit
@@ -29,6 +29,7 @@ object frm_Atividade02: Tfrm_Atividade02
     Width = 121
     Height = 38
     TabOrder = 0
+    OnChange = edt_vlr_1Change
   end
   object edt_vlr_2: TEdit
     Left = 233
@@ -36,6 +37,7 @@ object frm_Atividade02: Tfrm_Atividade02
     Width = 121
     Height = 38
     TabOrder = 1
+    OnChange = edt_vlr_2Change
   end
   object btn_adicao: TButton
     Left = 48
@@ -44,6 +46,7 @@ object frm_Atividade02: Tfrm_Atividade02
     Height = 25
     Caption = '+'
     TabOrder = 2
+    OnClick = btn_adicaoClick
   end
   object btn_subtracao: TButton
     Left = 152
@@ -52,6 +55,7 @@ object frm_Atividade02: Tfrm_Atividade02
     Height = 25
     Caption = '-'
     TabOrder = 3
+    OnClick = btn_subtracaoClick
   end
   object btn_multiplicacao: TButton
     Left = 256
@@ -60,6 +64,7 @@ object frm_Atividade02: Tfrm_Atividade02
     Height = 25
     Caption = '*'
     TabOrder = 4
+    OnClick = btn_multiplicacaoClick
   end
   object btn_divisao: TButton
     Left = 360
@@ -68,6 +73,7 @@ object frm_Atividade02: Tfrm_Atividade02
     Height = 25
     Caption = '/'
     TabOrder = 5
+    OnClick = btn_divisaoClick
   end
   object btn_resultado: TButton
     Left = 359
@@ -76,5 +82,6 @@ object frm_Atividade02: Tfrm_Atividade02
     Height = 25
     Caption = '='
     TabOrder = 6
+    OnClick = btn_resultadoClick
   end
 end
