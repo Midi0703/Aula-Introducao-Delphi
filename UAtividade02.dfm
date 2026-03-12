@@ -14,7 +14,7 @@ object frm_Atividade02: Tfrm_Atividade02
   object lbl_operacao: TLabel
     Left = 184
     Top = 59
-    Width = 51
+    Width = 6
     Height = 30
   end
   object lbl_resultado: TLabel
@@ -29,6 +29,7 @@ object frm_Atividade02: Tfrm_Atividade02
     Width = 121
     Height = 38
     TabOrder = 0
+    Text = '0'
     OnChange = edt_vlr_1Change
   end
   object edt_vlr_2: TEdit
@@ -37,6 +38,7 @@ object frm_Atividade02: Tfrm_Atividade02
     Width = 121
     Height = 38
     TabOrder = 1
+    Text = '0'
     OnChange = edt_vlr_2Change
   end
   object btn_adicao: TButton
@@ -83,5 +85,13 @@ object frm_Atividade02: Tfrm_Atividade02
     Caption = '='
     TabOrder = 6
     OnClick = btn_resultadoClick
+  end
+  object btn_limpar: TButton
+    Left = 457
+    Top = 128
+    Width = 48
+    Height = 25
+    Caption = 'C'
+    TabOrder = 7
   end
 end

@@ -17,6 +17,7 @@ type
     btn_multiplicacao: TButton;
     btn_divisao: TButton;
     btn_resultado: TButton;
+    btn_limpar: TButton;
     procedure btn_adicaoClick(Sender: TObject);
     procedure btn_resultadoClick(Sender: TObject);
     procedure btn_subtracaoClick(Sender: TObject);
@@ -69,12 +70,12 @@ end;
 
 procedure Tfrm_Atividade02.edt_vlr_1Change(Sender: TObject);
 begin
-n1 := StrToFloat(edt_vlr_1.Text);
+  n1 := StrToFloat(edt_vlr_1.Text);
 end;
 
 procedure Tfrm_Atividade02.edt_vlr_2Change(Sender: TObject);
 begin
-      n2 := StrToFloat(edt_vlr_2.Text);
+  n2 := StrToFloat(edt_vlr_2.Text);
 end;
 
 end.
