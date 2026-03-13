@@ -144,7 +144,7 @@
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="UAtividade26.pas">
-            <Form>frm_Atividade26</Form>
+            <Form>frmAtividade26</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Base">

@@ -25,35 +25,34 @@ object frmAtividade26: TfrmAtividade26
     Height = 45
     Caption = 'IDADE'
   end
-  object Label3: TLabel
+  object lbl_texto: TLabel
     Left = 32
     Top = 176
     Width = 489
     Height = 45
-    Caption = 'Label3'
   end
-  object Edit1: TEdit
+  object edt_nome: TEdit
     Left = 160
     Top = 37
     Width = 361
     Height = 53
     TabOrder = 0
-    Text = 'Edit1'
+    OnChange = edt_nomeChange
   end
-  object Edit2: TEdit
+  object edt_idade: TEdit
     Left = 160
     Top = 96
     Width = 121
     Height = 53
     TabOrder = 1
-    Text = 'Edit2'
+    OnChange = edt_idadeChange
   end
-  object Button1: TButton
+  object btn_resposta: TButton
     Left = 304
     Top = 96
     Width = 217
     Height = 53
-    Caption = 'Button1'
+    Caption = 'RESPOSTA'
     TabOrder = 2
   end
 end
