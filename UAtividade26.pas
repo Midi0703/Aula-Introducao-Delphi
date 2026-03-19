@@ -36,7 +36,7 @@ procedure TfrmAtividade26.btn_respostaClick(Sender: TObject);
 var idDaquiVinteoitoAnos : Integer;
 begin
   idDaquiVinteoitoAnos := idade + 28;
-  lbl_texto.Caption := nome + ' Daqui a 28 anos você vai ter ' + IntToStr(idDaquiVinteoitoAnos);
+  lbl_texto.Caption := nome + ' daqui a 28 anos você terá ' + IntToStr(idDaquiVinteoitoAnos) + ' anos';
 end;
 
 procedure TfrmAtividade26.edt_idadeChange(Sender: TObject);

@@ -11,6 +11,7 @@ object frmAtividade26: TfrmAtividade26
   Font.Height = -32
   Font.Name = 'Segoe UI'
   Font.Style = []
+  Position = poScreenCenter
   TextHeight = 45
   object lbl_nome: TLabel
     Left = 32
