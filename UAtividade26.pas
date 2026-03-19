@@ -16,6 +16,7 @@ type
     lbl_texto: TLabel;
     procedure edt_nomeChange(Sender: TObject);
     procedure edt_idadeChange(Sender: TObject);
+    procedure btn_respostaClick(Sender: TObject);
   private
   nome : String;
   idade :  Integer;
@@ -30,6 +31,13 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TfrmAtividade26.btn_respostaClick(Sender: TObject);
+var idDaquiVinteoitoAnos : Integer;
+begin
+  idDaquiVinteoitoAnos := idade + 28;
+  lbl_texto.Caption := nome + ' Daqui a 28 anos você vai ter ' + IntToStr(idDaquiVinteoitoAnos);
+end;
 
 procedure TfrmAtividade26.edt_idadeChange(Sender: TObject);
 begin
