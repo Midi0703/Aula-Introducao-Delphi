@@ -151,8 +151,18 @@
             <Form>frmAtividade27</Form>
             <FormType>dfm</FormType>
         </DCCReference>
+        <DCCReference Include="UAtividadeLogin.pas">
+            <Form>frmAtividadelogin</Form>
+        </DCCReference>
         <DCCReference Include="UAtividadeMessage.pas">
             <Form>frm_Message</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="UAtividade43.pas">
+            <Form>frmAtividade43</Form>
+        </DCCReference>
+        <DCCReference Include="UAtividade44.pas">
+            <Form>frmAtividade44</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Base">

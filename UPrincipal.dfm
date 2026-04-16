@@ -89,8 +89,17 @@ object frmPrincipal: TfrmPrincipal
     Top = 103
     Width = 150
     Height = 34
-    Caption = 'Sal'#225'rio'
+    Caption = 'Atividade 43'
     TabOrder = 8
     OnClick = btnAtividade43Click
+  end
+  object btnAtividade44: TButton
+    Left = 412
+    Top = 143
+    Width = 150
+    Height = 32
+    Caption = 'Atividade 44'
+    TabOrder = 9
+    OnClick = btnAtividade44Click
   end
 end
