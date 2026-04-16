@@ -9,7 +9,9 @@ uses
   UAtividade02 in 'UAtividade02.pas' {Form1},
   UAtividade26 in 'UAtividade26.pas' {frmAtividade26},
   UAtividade27 in 'UAtividade27.pas' {frmAtividade27},
-  UAtividadeMessage in 'UAtividadeMessage.pas' {frm_Message};
+  UAtividadeLogin in 'UAtividadeLogin.pas' {frmAtividadelogin},
+  UAtividadeMessage in 'UAtividadeMessage.pas' {frm_Message},
+  UAtividade43 in 'UAtividade43.pas' {frmAtividade43};
 
 {$R *.res}
 
@@ -23,6 +25,8 @@ begin
   Application.CreateForm(Tfrm_Atividade02, frm_Atividade02);
   Application.CreateForm(TfrmAtividade26, frmAtividade26);
   Application.CreateForm(TfrmAtividade27, frmAtividade27);
+  Application.CreateForm(TfrmAtividadelogin, frmAtividadelogin);
   Application.CreateForm(Tfrm_AtividadeMessage, frm_AtividadeMessage);
+  Application.CreateForm(TfrmAtividade43, frmAtividade43);
   Application.Run;
 end.
