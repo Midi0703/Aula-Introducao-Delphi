@@ -2,8 +2,8 @@ object frmPrincipal: TfrmPrincipal
   Left = 0
   Top = 0
   Caption = 'Exemplo Componentes Aula Delphi'
-  ClientHeight = 305
-  ClientWidth = 576
+  ClientHeight = 288
+  ClientWidth = 570
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -22,7 +22,7 @@ object frmPrincipal: TfrmPrincipal
     OnClick = btnExemplo01Click
   end
   object btnAtividade01: TButton
-    Left = 256
+    Left = 216
     Top = 25
     Width = 150
     Height = 33
@@ -40,7 +40,7 @@ object frmPrincipal: TfrmPrincipal
     OnClick = btn_Exemplo02Click
   end
   object btn_atividade02: TButton
-    Left = 256
+    Left = 216
     Top = 64
     Width = 150
     Height = 33
@@ -49,7 +49,7 @@ object frmPrincipal: TfrmPrincipal
     OnClick = btn_atividade02Click
   end
   object btn_atividade26: TButton
-    Left = 256
+    Left = 216
     Top = 103
     Width = 150
     Height = 33
@@ -58,7 +58,7 @@ object frmPrincipal: TfrmPrincipal
     OnClick = btn_atividade26Click
   end
   object btn_atividade27: TButton
-    Left = 256
+    Left = 216
     Top = 142
     Width = 150
     Height = 33
@@ -67,12 +67,30 @@ object frmPrincipal: TfrmPrincipal
     OnClick = btn_atividade27Click
   end
   object btnMessage: TButton
-    Left = 256
-    Top = 214
+    Left = 412
+    Top = 64
     Width = 150
     Height = 33
     Caption = 'Message'
     TabOrder = 6
     OnClick = btnMessageClick
+  end
+  object btnPassword: TButton
+    Left = 412
+    Top = 24
+    Width = 150
+    Height = 33
+    Caption = 'Senha'
+    TabOrder = 7
+    OnClick = btnPasswordClick
+  end
+  object btnAtividade43: TButton
+    Left = 412
+    Top = 103
+    Width = 150
+    Height = 34
+    Caption = 'Sal'#225'rio'
+    TabOrder = 8
+    OnClick = btnAtividade43Click
   end
 end

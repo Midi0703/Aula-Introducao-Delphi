@@ -27,5 +27,6 @@ object frm_AtividadeMessage: Tfrm_AtividadeMessage
     Height = 49
     Caption = 'Input Box'
     TabOrder = 1
+    OnClick = btn_InputBoxClick
   end
 end

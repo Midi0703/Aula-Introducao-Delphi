@@ -11,6 +11,7 @@ type
     btn_MessageBox: TButton;
     btn_InputBox: TButton;
     procedure btn_MessageBoxClick(Sender: TObject);
+    procedure btn_InputBoxClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -23,6 +24,15 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure Tfrm_AtividadeMessage.btn_InputBoxClick(Sender: TObject);
+var
+ nome_pais : String;
+begin
+        nome_pais := InputBox('Escolha de país',
+        'Digite o nome do país', 'Brasil');
+        ShowMessage('O nome do país escolhido é: ' + nome_pais);
+end;
 
 procedure Tfrm_AtividadeMessage.btn_MessageBoxClick(Sender: TObject);
 var
