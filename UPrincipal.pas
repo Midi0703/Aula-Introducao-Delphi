@@ -31,6 +31,7 @@ type
     procedure btnAtividade43Click(Sender: TObject);
     procedure btnAtividade44Click(Sender: TObject);
     procedure btnAtividade46Click(Sender: TObject);
+    procedure btnAtividade47Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -45,7 +46,8 @@ implementation
 {$R *.dfm}
 
 uses UExemplo01, UAtividade01, UExemplo02, UAtividade02, UAtividade26,
-UAtividade27, UAtividadeLogin, UAtividadeMessage, UAtividade43, UAtividade44, UAtividade46;
+UAtividade27, UAtividadeLogin, UAtividadeMessage, UAtividade43, UAtividade44,
+UAtividade46, UAtividade47;
 
 procedure TfrmPrincipal.btnAtividade01Click(Sender: TObject);
 begin
@@ -65,6 +67,11 @@ end;
 procedure TfrmPrincipal.btnAtividade46Click(Sender: TObject);
 begin
   frmAtividade46.showModal;
+end;
+
+procedure TfrmPrincipal.btnAtividade47Click(Sender: TObject);
+begin
+  frmAtividade47.showModal;
 end;
 
 procedure TfrmPrincipal.btnExemplo01Click(Sender: TObject);

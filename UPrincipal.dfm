@@ -118,5 +118,6 @@ object frmPrincipal: TfrmPrincipal
     Height = 34
     Caption = 'Atividade 47'
     TabOrder = 11
+    OnClick = btnAtividade47Click
   end
 end
