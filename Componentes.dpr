@@ -13,7 +13,8 @@ uses
   UAtividadeMessage in 'UAtividadeMessage.pas' {frm_Message},
   UAtividade43 in 'UAtividade43.pas' {frmAtividade43},
   UAtividade44 in 'UAtividade44.pas' {frmAtividade44},
-  UAtividade46 in 'UAtividade46.pas' {frmAtividade46};
+  UAtividade46 in 'UAtividade46.pas' {frmAtividade46},
+  UAtividade47 in 'UAtividade47.pas' {frmAtividade47};
 
 {$R *.res}
 
@@ -32,5 +33,7 @@ begin
   Application.CreateForm(TfrmAtividade43, frmAtividade43);
   Application.CreateForm(TfrmAtividade44, frmAtividade44);
   Application.CreateForm(TfrmAtividade46, frmAtividade46);
+  Application.CreateForm(TfrmAtividade46, frmAtividade46);
+  Application.CreateForm(TfrmAtividade47, frmAtividade47);
   Application.Run;
 end.
