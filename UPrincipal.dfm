@@ -2,8 +2,8 @@ object frmPrincipal: TfrmPrincipal
   Left = 0
   Top = 0
   Caption = 'Exemplo Componentes Aula Delphi'
-  ClientHeight = 271
-  ClientWidth = 564
+  ClientHeight = 477
+  ClientWidth = 588
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -22,8 +22,8 @@ object frmPrincipal: TfrmPrincipal
     OnClick = btnExemplo01Click
   end
   object btnAtividade01: TButton
-    Left = 216
-    Top = 25
+    Left = 24
+    Top = 104
     Width = 150
     Height = 33
     Caption = 'Atividade 1'
@@ -40,8 +40,8 @@ object frmPrincipal: TfrmPrincipal
     OnClick = btn_Exemplo02Click
   end
   object btn_atividade02: TButton
-    Left = 216
-    Top = 64
+    Left = 24
+    Top = 143
     Width = 150
     Height = 33
     Caption = 'Atividade 2'
@@ -49,8 +49,8 @@ object frmPrincipal: TfrmPrincipal
     OnClick = btn_atividade02Click
   end
   object btn_atividade26: TButton
-    Left = 216
-    Top = 103
+    Left = 24
+    Top = 182
     Width = 150
     Height = 33
     Caption = 'Atividade 26'
@@ -58,8 +58,8 @@ object frmPrincipal: TfrmPrincipal
     OnClick = btn_atividade26Click
   end
   object btn_atividade27: TButton
-    Left = 216
-    Top = 142
+    Left = 24
+    Top = 221
     Width = 150
     Height = 33
     Caption = 'Atividade 27'
@@ -67,8 +67,8 @@ object frmPrincipal: TfrmPrincipal
     OnClick = btn_atividade27Click
   end
   object btnMessage: TButton
-    Left = 412
-    Top = 64
+    Left = 24
+    Top = 299
     Width = 150
     Height = 33
     Caption = 'Message'
@@ -76,8 +76,8 @@ object frmPrincipal: TfrmPrincipal
     OnClick = btnMessageClick
   end
   object btnPassword: TButton
-    Left = 412
-    Top = 24
+    Left = 24
+    Top = 260
     Width = 150
     Height = 33
     Caption = 'Senha'
@@ -85,8 +85,8 @@ object frmPrincipal: TfrmPrincipal
     OnClick = btnPasswordClick
   end
   object btnAtividade43: TButton
-    Left = 412
-    Top = 103
+    Left = 24
+    Top = 338
     Width = 150
     Height = 34
     Caption = 'Atividade 43'
@@ -94,12 +94,21 @@ object frmPrincipal: TfrmPrincipal
     OnClick = btnAtividade43Click
   end
   object btnAtividade44: TButton
-    Left = 412
-    Top = 143
+    Left = 24
+    Top = 378
     Width = 150
-    Height = 32
+    Height = 35
     Caption = 'Atividade 44'
     TabOrder = 9
     OnClick = btnAtividade44Click
+  end
+  object btnAtividade46: TButton
+    Left = 196
+    Top = 25
+    Width = 150
+    Height = 33
+    Caption = 'Atividade 46'
+    TabOrder = 10
+    OnClick = btnAtividade46Click
   end
 end
