@@ -1,32 +1,50 @@
-object frm_AtividadeMessage: Tfrm_AtividadeMessage
+object frmCaixamensagem: TfrmCaixamensagem
   Left = 0
   Top = 0
-  Caption = 'UAtividadeMessage'
-  ClientHeight = 151
-  ClientWidth = 256
+  BorderStyle = bsDialog
+  Caption = 'Caixa de Mensagem'
+  ClientHeight = 441
+  ClientWidth = 624
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -21
   Font.Name = 'Segoe UI'
   Font.Style = []
+  Position = poDesktopCenter
   TextHeight = 30
-  object btn_MessageBox: TButton
+  object btn_messagebox: TButton
     Left = 8
-    Top = 16
-    Width = 240
-    Height = 49
+    Top = 24
+    Width = 153
+    Height = 73
     Caption = 'Message Box'
     TabOrder = 0
-    OnClick = btn_MessageBoxClick
+    OnClick = btn_messageboxClick
   end
-  object btn_InputBox: TButton
-    Left = 8
-    Top = 88
-    Width = 240
-    Height = 49
-    Caption = 'Input Box'
+  object Button2: TButton
+    Left = 176
+    Top = 120
+    Width = 161
+    Height = 57
+    Caption = 'Button1'
     TabOrder = 1
-    OnClick = btn_InputBoxClick
+  end
+  object Button3: TButton
+    Left = 8
+    Top = 120
+    Width = 153
+    Height = 57
+    Caption = 'Button1'
+    TabOrder = 2
+  end
+  object btn_inputbox: TButton
+    Left = 176
+    Top = 24
+    Width = 161
+    Height = 73
+    Caption = 'Input Box'
+    TabOrder = 3
+    OnClick = btn_inputboxClick
   end
 end

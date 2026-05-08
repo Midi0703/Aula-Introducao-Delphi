@@ -7,11 +7,13 @@ uses
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
 
 type
-  Tfrm_AtividadeMessage = class(TForm)
-    btn_MessageBox: TButton;
-    btn_InputBox: TButton;
-    procedure btn_MessageBoxClick(Sender: TObject);
-    procedure btn_InputBoxClick(Sender: TObject);
+  TfrmCaixamensagem = class(TForm)
+    btn_messagebox: TButton;
+    Button2: TButton;
+    Button3: TButton;
+    btn_inputbox: TButton;
+    procedure btn_messageboxClick(Sender: TObject);
+    procedure btn_inputboxClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -19,29 +21,60 @@ type
   end;
 
 var
-  frm_AtividadeMessage: Tfrm_AtividadeMessage;
+  frmCaixamensagem: TfrmCaixamensagem;
 
 implementation
 
 {$R *.dfm}
 
-procedure Tfrm_AtividadeMessage.btn_InputBoxClick(Sender: TObject);
-var
- nome_pais : String;
+procedure TfrmCaixamensagem.btn_inputboxClick(Sender: TObject);
+var nomePais : string;
 begin
-        nome_pais := InputBox('Escolha de país',
-        'Digite o nome do país', 'Brasil');
-        ShowMessage('O nome do país escolhido é: ' + nome_pais);
+nomePais := InputBox ('Escolha de país', 'Digite o nome do país', 'Brasil');
+showmessage('O nome do país escolhido é: '+ nomePais);
 end;
 
-procedure Tfrm_AtividadeMessage.btn_MessageBoxClick(Sender: TObject);
-var
-   Mensagem : Integer;
+procedure TfrmCaixamensagem.btn_messageboxClick(Sender: TObject);
+var resultado,resultado2 : integer;
 begin
-   Mensagem := MessageBox(Application.Handle,
-   'Selecione uma opção para exibir seu valor','Saída',291);
+      resultado := messagebox(application.Handle, 'Você aceita entregar seu primeiro filho para nossa instituição??', 'Termos de contrato', mb_iconquestion + mb_yesnocancel + mb_defbutton1);
+      //resultado := messagebox(application.Handle, 'Você deseja doar seu primeiro filho para nossa instituição??', 'Termos de contrato', 35);
+      if resultado = idYes then
+      //if resultado = 6 then
+      showmessage('Contrato assinado.')
 
-   ShowMessage('Retorno = ' + IntToStr(Mensagem))
+      else
+
+      if resultado = idNo then
+      //if resultado = 7 then
+      begin
+        resultado2 := messagebox(application.handle, 'Você tem certeza?' , '????', mb_yesno + mb_iconexclamation + mb_defbutton2);
+        //messagebox(application.handle, 'Você tem certeza?' , '????', 308);
+        if resultado2 = idYes then
+        //if resultado = 6 then
+        showmessage('Até mais.')
+        else
+        if resultado2 = idNo then
+        //if resultado = 7 then
+        showmessage('Contrato assinado.')
+      end
+
+      else
+
+      if resultado = idCancel then
+      begin
+        showmessage('Cancelando?');
+        resultado2 := messagebox(application.handle, 'Você tem certeza?' , '????', mb_yesno + mb_iconexclamation + mb_defbutton2);
+        //messagebox(application.handle, 'Você tem certeza?' , '????', 308);
+        if resultado2 = idYes then
+        //if resultado = 6 then
+        showmessage('Até mais.')
+        else
+        if resultado2 = idNo then
+        //if resultado = 7 then
+        showmessage('Contrato assinado.')
+      end;
+
 end;
 
 end.

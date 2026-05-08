@@ -1,18 +1,15 @@
-object frmAtividade47: TfrmAtividade47
+object frmAtividade47Errado: TfrmAtividade47Errado
   Left = 0
   Top = 0
   Caption = 'Atividade 47'
-  ClientHeight = 441
-  ClientWidth = 624
+  ClientHeight = 432
+  ClientWidth = 499
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
-  Font.Height = -12
+  Font.Height = -32
   Font.Name = 'Segoe UI'
   Font.Style = []
-<<<<<<< Updated upstream
-  TextHeight = 15
-=======
   TextHeight = 45
   object lbl_instrucao: TLabel
     Left = 8
@@ -26,7 +23,7 @@ object frmAtividade47: TfrmAtividade47
     Left = 8
     Top = 133
     Width = 225
-    Height = 49
+    Height = 53
     NumbersOnly = True
     TabOrder = 0
   end
@@ -37,13 +34,20 @@ object frmAtividade47: TfrmAtividade47
     Height = 49
     Caption = 'Separar'
     TabOrder = 1
+    OnClick = btn_separarClick
   end
   object ltb_par: TListBox
     Left = 8
     Top = 200
     Width = 225
     Height = 217
-    ItemHeight = 45
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ItemHeight = 13
+    ParentFont = False
     TabOrder = 2
   end
   object ltb_impar: TListBox
@@ -51,7 +55,13 @@ object frmAtividade47: TfrmAtividade47
     Top = 200
     Width = 225
     Height = 217
-    ItemHeight = 45
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ItemHeight = 13
+    ParentFont = False
     TabOrder = 3
   end
   object btn_add: TButton
@@ -63,5 +73,4 @@ object frmAtividade47: TfrmAtividade47
     TabOrder = 4
     OnClick = btn_addClick
   end
->>>>>>> Stashed changes
 end

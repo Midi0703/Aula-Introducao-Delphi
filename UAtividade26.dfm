@@ -2,62 +2,61 @@ object frmAtividade26: TfrmAtividade26
   Left = 0
   Top = 0
   BorderStyle = bsDialog
-  Caption = 'frm_atividade26'
-  ClientHeight = 293
-  ClientWidth = 627
+  Caption = 'Atividade 26'
+  ClientHeight = 384
+  ClientWidth = 676
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
-  Font.Height = -32
+  Font.Height = -36
   Font.Name = 'Segoe UI'
   Font.Style = []
-  Position = poScreenCenter
-  TextHeight = 45
+  TextHeight = 48
   object lbl_nome: TLabel
-    Left = 32
-    Top = 37
-    Width = 93
-    Height = 45
-    Caption = 'NOME'
+    Left = 0
+    Top = 0
+    Width = 106
+    Height = 48
+    Caption = 'Nome:'
   end
   object lbl_idade: TLabel
-    Left = 32
-    Top = 104
-    Width = 89
-    Height = 45
-    Caption = 'IDADE'
+    Left = 6
+    Top = 80
+    Width = 97
+    Height = 48
+    Caption = 'Idade:'
   end
-  object lbl_texto: TLabel
-    Left = 32
-    Top = 173
-    Width = 587
-    Height = 100
+  object lbl_exibicao: TLabel
+    Left = 8
+    Top = 208
+    Width = 526
+    Height = 113
     AutoSize = False
     WordWrap = True
   end
   object edt_nome: TEdit
-    Left = 160
-    Top = 37
-    Width = 459
-    Height = 53
+    Left = 109
+    Top = 0
+    Width = 417
+    Height = 56
     TabOrder = 0
-    OnChange = edt_nomeChange
   end
   object edt_idade: TEdit
-    Left = 160
-    Top = 96
-    Width = 121
-    Height = 53
+    Left = 109
+    Top = 77
+    Width = 233
+    Height = 56
+    NumbersOnly = True
     TabOrder = 1
-    OnChange = edt_idadeChange
   end
-  object btn_resposta: TButton
-    Left = 296
-    Top = 96
-    Width = 323
-    Height = 53
-    Caption = 'RESPOSTA'
+  object btn_exibir: TButton
+    Left = 348
+    Top = 62
+    Width = 309
+    Height = 131
+    Caption = 'Exibir sua idade daqui 9083 anos'
     TabOrder = 2
-    OnClick = btn_respostaClick
+    WordWrap = True
+    OnClick = btn_exibirClick
   end
 end

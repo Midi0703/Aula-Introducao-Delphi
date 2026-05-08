@@ -3,91 +3,110 @@ object frmAtividade44: TfrmAtividade44
   Top = 0
   BorderStyle = bsDialog
   Caption = 'Atividade 44'
-  ClientHeight = 487
-  ClientWidth = 857
+  ClientHeight = 586
+  ClientWidth = 1058
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
-  Font.Height = -21
+  Font.Height = -24
   Font.Name = 'Segoe UI'
   Font.Style = []
-  Position = poScreenCenter
-  TextHeight = 30
+  Position = poDesktopCenter
+  TextHeight = 32
   object lbl_nome: TLabel
-    Left = 48
-    Top = 72
-    Width = 67
-    Height = 30
-    Caption = 'NOME:'
+    Left = 40
+    Top = 19
+    Width = 97
+    Height = 38
+    Caption = 'Nome:'
   end
-  object lbl_perguntas: TLabel
-    Left = 48
-    Top = 120
-    Width = 214
-    Height = 30
-    Caption = 'Perguntas Investiga'#231#227'o'
+  object lbl_investigacao: TLabel
+    Left = 40
+    Top = 98
+    Width = 337
+    Height = 32
+    Caption = '        Perguntas Investiga'#231#227'o'
+  end
+  object lbl_suspeito: TLabel
+    Left = 383
+    Top = 19
+    Width = 80
+    Height = 28
+    Caption = 'Supeitos:'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -20
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
   end
   object edt_nome: TEdit
-    Left = 128
-    Top = 69
-    Width = 281
-    Height = 33
+    Left = 120
+    Top = 19
+    Width = 257
+    Height = 38
     TabOrder = 0
   end
-  object btn_adicionarSuspeito: TButton
-    Left = 48
-    Top = 341
-    Width = 361
-    Height = 37
-    Caption = 'Adicionar a Lista de Suspeito >>'
+  object chk_pergunta1: TCheckBox
+    Left = 40
+    Top = 136
+    Width = 337
+    Height = 41
+    Caption = 'Telefonou para a v'#237'tima?'
     TabOrder = 1
   end
-  object cb_pergunta1: TCheckBox
-    Left = 48
-    Top = 156
-    Width = 345
-    Height = 25
-    Caption = 'Telefonou para a v'#237'tima?'
+  object chk_pergunta2: TCheckBox
+    Left = 40
+    Top = 183
+    Width = 337
+    Height = 41
+    Caption = 'Esteve no local do crime?'
     TabOrder = 2
   end
-  object cb_pergunta2: TCheckBox
-    Left = 48
-    Top = 187
-    Width = 345
-    Height = 25
-    Caption = 'Esteve no local do crime?'
+  object chk_pergunta3: TCheckBox
+    Left = 40
+    Top = 224
+    Width = 337
+    Height = 47
+    Caption = 'Mora perto da v'#237'tima?'
     TabOrder = 3
   end
-  object cb_pergunta3: TCheckBox
-    Left = 48
-    Top = 224
-    Width = 345
-    Height = 25
-    Caption = 'Mora perto da v'#237'tima?'
+  object chk_pergunta4: TCheckBox
+    Left = 40
+    Top = 272
+    Width = 337
+    Height = 41
+    Caption = 'Devia para a v'#237'tima?'
     TabOrder = 4
   end
-  object cb_pergunta4: TCheckBox
-    Left = 48
-    Top = 264
-    Width = 345
-    Height = 25
-    Caption = 'Devia para a v'#237'tima?'
+  object chk_pergunta5: TCheckBox
+    Left = 40
+    Top = 319
+    Width = 337
+    Height = 41
+    Caption = 'J'#225' trabalhou com a v'#237'tima?'
     TabOrder = 5
   end
-  object cb_pergunta5: TCheckBox
-    Left = 48
-    Top = 304
-    Width = 345
-    Height = 25
-    Caption = 'J'#225' trabalhou com a v'#237'tima?'
+  object btn_adicionar: TButton
+    Left = 40
+    Top = 63
+    Width = 337
+    Height = 34
+    Caption = 'Adicionar a lista de suspeitos >>'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -22
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
     TabOrder = 6
+    OnClick = btn_adicionarClick
   end
-  object lb_suspeitos: TListBox
-    Left = 432
-    Top = 69
-    Width = 385
-    Height = 309
-    ItemHeight = 30
+  object sbx_vertical: TScrollBox
+    Left = 743
+    Top = 19
+    Width = 33
+    Height = 341
     TabOrder = 7
   end
 end

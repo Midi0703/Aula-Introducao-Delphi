@@ -9,10 +9,10 @@ uses
 type
   TfrmExemplo02 = class(TForm)
     edt_vlr_1: TEdit;
-    lbl_sinal: TLabel;
     edt_vlr_2: TEdit;
-    btn_resultado: TButton;
+    lbl_sinal: TLabel;
     lbl_resultado: TLabel;
+    btn_resultado: TButton;
     procedure btn_resultadoClick(Sender: TObject);
   private
     { Private declarations }
@@ -29,14 +29,13 @@ implementation
 
 procedure TfrmExemplo02.btn_resultadoClick(Sender: TObject);
 var n1, n2, total : Integer;
+
 begin
-  n1 := StrToInt(edt_vlr_1.Text);
-  n2 := StrToInt(edt_vlr_2.Text);
-
-  total := n1 + n2;
-   lbl_resultado.Caption := IntToStr(total);
+n1 :=  StrToInt(edt_vlr_1.Text);
+n2 :=  StrToInt(edt_vlr_2.Text);
+total := n1 + n2;
+lbl_resultado.Caption := IntToStr(total)
+//lbl_resultado.Caption := IntToStr(StrToInt(edt_vlr_1.Text) + StrToInt(edt_vlr_2.Text));
 end;
-
-
 
 end.

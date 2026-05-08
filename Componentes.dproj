@@ -139,8 +139,8 @@
             <Form>frmExemplo02</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="UAtividade02.pas">
-            <Form>Form1</Form>
+        <DCCReference Include="UExemplo03.pas">
+            <Form>frmAtividade02</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="UAtividade26.pas">
@@ -153,16 +153,30 @@
         </DCCReference>
         <DCCReference Include="UAtividadeLogin.pas">
             <Form>frmAtividadelogin</Form>
+            <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="UAtividadeMessage.pas">
-            <Form>frm_Message</Form>
+            <Form>frmCaixamensagem</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="UAtividade43.pas">
             <Form>frmAtividade43</Form>
+            <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="UAtividade44.pas">
             <Form>frmAtividade44</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="UEx_24.pas">
+            <Form>frmEx_24</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="UAtividade46Timer.pas">
+            <Form>frmAtividade46Timer</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="UAtividade47Errado.pas">
+            <Form>frmAtividade47Errado</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="UAtividade46.pas">
@@ -171,6 +185,26 @@
         </DCCReference>
         <DCCReference Include="UAtividade47.pas">
             <Form>frmAtividade47</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="UAtividade48.pas">
+            <Form>frmAtividade48</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="UAtividade49.pas">
+            <Form>frmAtividade49</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="UAtividade50.pas">
+            <Form>frmAtividade50</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="UAtividade51.pas">
+            <Form>frmAtividade51</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="UAtividade52.pas">
+            <Form>frmAtividade52</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Base">
@@ -1156,6 +1190,7 @@
                 <Platform value="Win32">True</Platform>
                 <Platform value="Win64">True</Platform>
             </Platforms>
+            <ModelSupport>False</ModelSupport>
         </BorlandProject>
         <ProjectFileVersion>12</ProjectFileVersion>
     </ProjectExtensions>

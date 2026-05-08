@@ -12,14 +12,10 @@ type
     edt_idade: TEdit;
     lbl_nome: TLabel;
     lbl_idade: TLabel;
-    btn_resposta: TButton;
-    lbl_texto: TLabel;
-    procedure edt_nomeChange(Sender: TObject);
-    procedure edt_idadeChange(Sender: TObject);
-    procedure btn_respostaClick(Sender: TObject);
+    lbl_exibicao: TLabel;
+    btn_exibir: TButton;
+    procedure btn_exibirClick(Sender: TObject);
   private
-  nome : String;
-  idade :  Integer;
     { Private declarations }
   public
     { Public declarations }
@@ -32,21 +28,16 @@ implementation
 
 {$R *.dfm}
 
-procedure TfrmAtividade26.btn_respostaClick(Sender: TObject);
-var idDaquiVinteoitoAnos : Integer;
-begin
-  idDaquiVinteoitoAnos := idade + 28;
-  lbl_texto.Caption := nome + ' daqui a 28 anos você terá ' + IntToStr(idDaquiVinteoitoAnos) + ' anos';
-end;
+procedure TfrmAtividade26.btn_exibirClick(Sender: TObject);
+     var nome : string;
+     var idade, somaIdade: integer;
 
-procedure TfrmAtividade26.edt_idadeChange(Sender: TObject);
 begin
-  idade := StrToInt(edt_idade.Text);
-end;
+nome := edt_nome.Text;
+somaIdade := strtoint(edt_idade.text)+ 9083;
+lbl_exibicao.Caption := nome + ' daqui a 9083 anos terá '+inttostr(somaIdade)+' anos! :)';
 
-procedure TfrmAtividade26.edt_nomeChange(Sender: TObject);
-begin
-  nome := edt_nome.Text;
+
 end;
 
 end.
