@@ -81,7 +81,7 @@ end;
 
 procedure TfrmPrincipal.btnMessageClick(Sender: TObject);
 begin
- frm_AtividadeMessage.ShowModal;
+  frmCaixamensagem.ShowModal;
 end;
 
 procedure TfrmPrincipal.btnPasswordClick(Sender: TObject);
