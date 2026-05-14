@@ -3,8 +3,9 @@ unit UPrincipal;
 interface
 
 uses
-  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
+  System.Classes, Vcl.Graphics, Vcl.Controls, Vcl.Forms,
+  Vcl.Dialogs, Vcl.StdCtrls;
 
 type
   TfrmPrincipal = class(TForm)
@@ -20,14 +21,14 @@ type
     btn_atividade44: TButton;
     btn_atividade46: TButton;
     btn_exemplo24: TButton;
-    btn_atividade47: TButton;
-    btn_atividade47Errado: TButton;
     btn_atividade46timer: TButton;
     btn_atividade48: TButton;
     btn_atividade49: TButton;
     btn_atividade50: TButton;
     btn_atividade51: TButton;
     btn_atividade52: TButton;
+    atv47: TButton;
+
     procedure btnExemplo01Click(Sender: TObject);
     procedure btnAtividade01Click(Sender: TObject);
     procedure btn_exemplo2Click(Sender: TObject);
@@ -46,8 +47,11 @@ type
     procedure btn_atividade50Click(Sender: TObject);
     procedure btn_atividade51Click(Sender: TObject);
     procedure btn_atividade52Click(Sender: TObject);
+    procedure atv47Click(Sender: TObject);
+
   private
     { Private declarations }
+
   public
     { Public declarations }
   end;
@@ -59,12 +63,31 @@ implementation
 
 {$R *.dfm}
 
-uses UExemplo01, UAtividade01, UExemplo02, UExemplo03, UAtividade26,
-  UAtividade27, UAtividadeLogin, UAtividadeMessage, UAtividade43, UAtividade44,
-  UEx_24, UAtividade46, UAtividade46Timer, UAtividade47Errado,
-  UAtividade48, UAtividade49, UAtividade50, UAtividade51, UAtividade52;
+uses
+  UExemplo01,
+  UAtividade01,
+  UExemplo02,
+  UExemplo03,
+  UAtividade26,
+  UAtividade27,
+  UAtividadeLogin,
+  UAtividadeMessage,
+  UAtividade43,
+  UAtividade44,
+  UEx_24,
+  UAtividade46,
+  UAtividade46Timer,
+  UAtividade47,
+  UAtividade48,
+  UAtividade49,
+  UAtividade50,
+  UAtividade51,
+  UAtividade52;
 
-
+procedure TfrmPrincipal.atv47Click(Sender: TObject);
+begin
+ frmAtividade47.showModal;
+end;
 
 procedure TfrmPrincipal.btnAtividade01Click(Sender: TObject);
 begin
@@ -78,7 +101,7 @@ end;
 
 procedure TfrmPrincipal.btn_exemplo24Click(Sender: TObject);
 begin
- frmEx_24.showmodal;
+  frmEx_24.ShowModal;
 end;
 
 procedure TfrmPrincipal.btn_exemplo2Click(Sender: TObject);
@@ -88,17 +111,17 @@ end;
 
 procedure TfrmPrincipal.btn_mensagemClick(Sender: TObject);
 begin
-   frmCaixamensagem.ShowModal;
+  frmCaixamensagem.ShowModal;
 end;
 
 procedure TfrmPrincipal.btn_atividade26Click(Sender: TObject);
 begin
- frmAtividade26.ShowModal;
+  frmAtividade26.ShowModal;
 end;
 
 procedure TfrmPrincipal.btn_atividade27Click(Sender: TObject);
 begin
-      frmAtividade27.ShowModal;
+  frmAtividade27.ShowModal;
 end;
 
 procedure TfrmPrincipal.btn_atividade2Click(Sender: TObject);
@@ -118,7 +141,7 @@ end;
 
 procedure TfrmPrincipal.btn_atividade46Click(Sender: TObject);
 begin
-  frmAtividade46.showModal;
+  frmAtividade46.ShowModal;
 end;
 
 procedure TfrmPrincipal.btn_atividade46timerClick(Sender: TObject);

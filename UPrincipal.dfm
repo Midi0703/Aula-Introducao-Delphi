@@ -2,8 +2,8 @@ object frmPrincipal: TfrmPrincipal
   Left = 0
   Top = 0
   Caption = 'Exemplo Componentes Aula Delphi'
-  ClientHeight = 440
-  ClientWidth = 676
+  ClientHeight = 379
+  ClientWidth = 662
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -32,7 +32,7 @@ object frmPrincipal: TfrmPrincipal
   end
   object btn_exemplo2: TButton
     Left = 24
-    Top = 72
+    Top = 65
     Width = 150
     Height = 33
     Caption = 'Exemplo 2'
@@ -41,7 +41,7 @@ object frmPrincipal: TfrmPrincipal
   end
   object btn_atividade2: TButton
     Left = 256
-    Top = 72
+    Top = 64
     Width = 150
     Height = 33
     Caption = 'Atividade 2'
@@ -50,7 +50,7 @@ object frmPrincipal: TfrmPrincipal
   end
   object btn_atividade26: TButton
     Left = 256
-    Top = 120
+    Top = 103
     Width = 150
     Height = 33
     Caption = 'Atividade 26'
@@ -59,7 +59,7 @@ object frmPrincipal: TfrmPrincipal
   end
   object btn_atividade27: TButton
     Left = 256
-    Top = 168
+    Top = 142
     Width = 150
     Height = 33
     Caption = 'Atividade 27'
@@ -68,7 +68,7 @@ object frmPrincipal: TfrmPrincipal
   end
   object btn_atividadelogin: TButton
     Left = 256
-    Top = 215
+    Top = 181
     Width = 150
     Height = 33
     Caption = 'Atividade Login'
@@ -77,7 +77,7 @@ object frmPrincipal: TfrmPrincipal
   end
   object btn_mensagem: TButton
     Left = 24
-    Top = 121
+    Top = 104
     Width = 193
     Height = 32
     Caption = 'Caixa de Mensagem'
@@ -86,7 +86,7 @@ object frmPrincipal: TfrmPrincipal
   end
   object btn_atividade43: TButton
     Left = 24
-    Top = 171
+    Top = 142
     Width = 150
     Height = 30
     Caption = 'Atividade 43'
@@ -95,7 +95,7 @@ object frmPrincipal: TfrmPrincipal
   end
   object btn_atividade44: TButton
     Left = 24
-    Top = 215
+    Top = 178
     Width = 150
     Height = 33
     Caption = 'Atividade 44'
@@ -104,7 +104,7 @@ object frmPrincipal: TfrmPrincipal
   end
   object btn_atividade46: TButton
     Left = 24
-    Top = 264
+    Top = 217
     Width = 150
     Height = 34
     Caption = 'Atividade 46'
@@ -113,28 +113,12 @@ object frmPrincipal: TfrmPrincipal
   end
   object btn_exemplo24: TButton
     Left = 256
-    Top = 264
+    Top = 220
     Width = 150
     Height = 33
     Caption = 'Exemplo 24'
     TabOrder = 11
     OnClick = btn_exemplo24Click
-  end
-  object btn_atividade47: TButton
-    Left = 24
-    Top = 312
-    Width = 150
-    Height = 33
-    Caption = 'Atividade 47'
-    TabOrder = 12
-  end
-  object btn_atividade47Errado: TButton
-    Left = 464
-    Top = 71
-    Width = 185
-    Height = 34
-    Caption = 'Atividade 47 errada'
-    TabOrder = 13
   end
   object btn_atividade46timer: TButton
     Left = 464
@@ -142,52 +126,61 @@ object frmPrincipal: TfrmPrincipal
     Width = 185
     Height = 34
     Caption = 'Atividade 46 Timer'
-    TabOrder = 14
+    TabOrder = 12
     OnClick = btn_atividade46timerClick
   end
   object btn_atividade48: TButton
     Left = 24
-    Top = 360
+    Top = 297
     Width = 150
     Height = 33
     Caption = 'Atividade 48'
-    TabOrder = 15
+    TabOrder = 13
     OnClick = btn_atividade48Click
   end
   object btn_atividade49: TButton
     Left = 24
-    Top = 412
+    Top = 336
     Width = 150
-    Height = 29
+    Height = 33
     Caption = 'Atividade 49'
-    TabOrder = 16
+    TabOrder = 14
     OnClick = btn_atividade49Click
   end
   object btn_atividade50: TButton
     Left = 256
-    Top = 312
+    Top = 259
     Width = 150
     Height = 33
     Caption = 'Atividade 50'
-    TabOrder = 17
+    TabOrder = 15
     OnClick = btn_atividade50Click
   end
   object btn_atividade51: TButton
     Left = 256
-    Top = 360
+    Top = 298
     Width = 150
     Height = 33
     Caption = 'Atividade 51'
-    TabOrder = 18
+    TabOrder = 16
     OnClick = btn_atividade51Click
   end
   object btn_atividade52: TButton
     Left = 256
-    Top = 412
+    Top = 337
     Width = 150
     Height = 29
     Caption = 'Atividade 52'
-    TabOrder = 19
+    TabOrder = 17
     OnClick = btn_atividade52Click
+  end
+  object atv47: TButton
+    Left = 24
+    Top = 257
+    Width = 150
+    Height = 34
+    Caption = 'ATV 47'
+    TabOrder = 18
+    OnClick = atv47Click
   end
 end
