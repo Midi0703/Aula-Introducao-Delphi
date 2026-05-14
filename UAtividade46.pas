@@ -3,8 +3,7 @@ unit UAtividade46;
 interface
 
 uses
-  Winapi.Windows, Winapi.Messages, System.SysUtils,
-  System.Variants, System.Classes, Vcl.Graphics,
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
 
 type
@@ -26,46 +25,36 @@ implementation
 
 procedure TfrmAtividade46.FormShow(Sender: TObject);
 var
-  contarErro: Integer;
-  vDigitado, senha: String;
+  contarErro : Integer;
+  vDigitado, senha : String;
 begin
-  senha := '123';
-  contarErro := 0;
+  senha := '1475369';
+  contarErro := -1;
 
   repeat
-    vDigitado := InputBox(
-      'Acesso ao sistema',
-      'Digite a senha correta' + #13 + 'para acessar o sistema',
-      ''
-    );
+    inc(contarErro);
+
+    if (contarErro >= 3) then
+    begin
+      Application.MessageBox('Você errou a três vezes, o programa ' +
+      'será fechado', 'AVISO', 16);
+      Application.Terminate;
+      Break;
+    end;
+
+    vDigitado := InputBox('Acesso ao sistema',
+    'Digite a senha correta ' + #13 + 'para acessar o sistema','');
 
     if (vDigitado = '') then
     begin
       Close;
-      Exit;
     end;
 
-    if (vDigitado <> senha) then
-    begin
-      Inc(contarErro);
 
-      if (contarErro >= 3) then
-      begin
-        Application.MessageBox(
-          'Você errou a senha três vezes, o programa será fechado',
-          'AVISO',
-          MB_ICONERROR
-        );
+  until (senha = vDigitado);
 
-        Application.Terminate;
-        Exit;
-      end;
-    end;
+  lblMensagem.Caption := 'Você errou a senha ' + IntToStr(contarErro) + ' vez(es)';
 
-  until (vDigitado = senha);
-
-  lblMensagem.Caption :=
-    'Você errou a senha ' + IntToStr(contarErro) + ' vez(es)';
 end;
 
 end.
