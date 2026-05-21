@@ -82,7 +82,7 @@ uses
   UAtividade49,
   UAtividade50,
   UAtividade51,
-  Uatv_52;
+  UAtv_52;
 
 procedure TfrmPrincipal.atv47Click(Sender: TObject);
 begin
