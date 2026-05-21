@@ -46,8 +46,8 @@ type
     procedure btn_atividade49Click(Sender: TObject);
     procedure btn_atividade50Click(Sender: TObject);
     procedure btn_atividade51Click(Sender: TObject);
-    procedure btn_atividade52Click(Sender: TObject);
     procedure atv47Click(Sender: TObject);
+    procedure btn_atividade52Click(Sender: TObject);
 
   private
     { Private declarations }
@@ -82,7 +82,7 @@ uses
   UAtividade49,
   UAtividade50,
   UAtividade51,
-  UAtividade52;
+  Uatv_52;
 
 procedure TfrmPrincipal.atv47Click(Sender: TObject);
 begin
@@ -171,7 +171,7 @@ end;
 
 procedure TfrmPrincipal.btn_atividade52Click(Sender: TObject);
 begin
-  frmAtividade52.ShowModal;
+  frmAtv_52.ShowModal;
 end;
 
 procedure TfrmPrincipal.btn_atividadeloginClick(Sender: TObject);
