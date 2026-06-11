@@ -183,4 +183,13 @@ object frmPrincipal: TfrmPrincipal
     TabOrder = 18
     OnClick = atv47Click
   end
+  object btn_atv54: TButton
+    Left = 464
+    Top = 64
+    Width = 185
+    Height = 34
+    Caption = 'Atividade 54'
+    TabOrder = 19
+    OnClick = btn_atv54Click
+  end
 end
